@@ -3,28 +3,45 @@
 @section('content')
 
 {{-- SOBRE MÍ --}}
+{{-- SOBRE MÍ --}}
 <section id="about" class="py-24 bg-slate-950">
-    <div class="container mx-auto px-6 max-w-4xl">
+    <div class="container mx-auto px-6 max-w-5xl"> {{-- Aumentado un poco el max-w para que respire --}}
         <span class="inline-block bg-blue-900/50 text-blue-400 text-xs font-medium tracking-widest uppercase px-3 py-1 rounded-full mb-6">Sobre mí</span>
-        {{-- Contenedor de la imagen --}}
-        <div class="flex-shrink-0 mb-12 md:mb-0 flex justify-center md:justify-start">
+        
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            {{-- BLOQUE IZQUIERDA: TEXTO --}}
+            <div>
+                <h2 class="text-4xl font-medium tracking-tight text-white mb-8">
+                    Mi trayectoria no ha sido <span class="text-blue-400">lineal</span>,<br>y esa es mi mayor ventaja.
+                </h2>
+                
+                <div class="space-y-6 text-base text-slate-400 leading-relaxed">
+                    <p>
+                        Tras años optimizando procesos en diversos sectores, identifiqué que mi capacidad de resolución de problemas encontraba su máximo exponente en el desarrollo web.
+                    </p>
+                    <p>
+                        He aprendido a pivotar, asimilar tecnologías complejas en tiempo récord y aportar una
+                        <span class="text-blue-400">visión pragmática</span> que otros desarrolladores pasan por alto.
+                        Este portfolio es la prueba de una transición ejecutada con disciplina.
+                    </p>
+                </div>
+            </div>
+
+            {{-- BLOQUE DERECHA: FOTO --}}
+            <div class="flex justify-center md:justify-end">
+                <div class="relative group max-w-xs">
+                    {{-- Adorno visual opcional (brillo detrás de la foto) --}}
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-sky-400 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                    
+                    <img src="{{ asset('img/mi-foto.jpg') }}" 
+                         alt="Mi fotografía" 
+                         class="relative w-full rounded-lg border border-slate-800 grayscale hover:grayscale-0 transition-all duration-500 shadow-2xl">
+                </div>
+            </div>
         </div>
 
-        <h2 class="text-4xl font-medium tracking-tight text-white mb-6">
-            Mi trayectoria no ha sido <span class="text-blue-400">lineal</span>,<br>y esa es mi mayor ventaja.
-        </h2>
-        <div class="space-y-5 text-base text-slate-400 leading-relaxed max-w-2xl">
-            <p>
-                Tras años optimizando procesos en diversos sectores, identifiqué que mi capacidad de resolución de problemas encontraba su máximo exponente en el desarrollo web.
-            </p>
-            <p>
-                He aprendido a pivotar, asimilar tecnologías complejas en tiempo récord y aportar una
-                <span class="text-blue-400">visión pragmática</span> que otros desarrolladores pasan por alto.
-                Este portfolio es la prueba de una transición ejecutada con disciplina.
-            </p>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-8 mt-12 pt-12 border-t border-slate-800">
+        {{-- BLOQUE INFERIOR: SKILLS (Se mantiene igual pero ajustado al grid superior) --}}
+        <div class="grid md:grid-cols-2 gap-8 mt-16 pt-12 border-t border-slate-800">
             <div>
                 <h4 class="text-white font-medium mb-2 flex items-center gap-3">
                     <span class="w-6 h-0.5 bg-sky-400"></span> Adaptabilidad
