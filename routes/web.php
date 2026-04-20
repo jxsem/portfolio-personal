@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
 
 //Parte principal del proyecto, donde se muestra la vista principal del proyecto
 Route::get('/', [ProjectController::class, 'index'])->name('portfolio.index');
@@ -20,6 +21,8 @@ Route::middleware(['auth', 'verified'])->prefix('admin')->group(function () {
     Route::delete('/destroy', [ProjectController::class, 'destroy'])->name('profile.destroy');
 });
 
+// Ruta para el formulario
+Route::post('/contacto', [ContactController::class, 'store'])->name('contact.store');
 
 
 require __DIR__.'/auth.php';
