@@ -66,6 +66,7 @@
 
 <footer class="bg-slate-900 border-t border-slate-800 py-6 text-center text-xs text-slate-600">
   &copy; 2026 Jose Manuel. Todos los derechos reservados.
+  <p class="mt-2">Proyecto realizado con &#10084;, con Laravel y Tailwind CSS | Gracias por leer</p>
 </footer>
 </body>
 </html>
