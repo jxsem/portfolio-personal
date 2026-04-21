@@ -10,7 +10,7 @@
 
 <header class="bg-slate-950 border-b border-slate-800/60 sticky top-0 z-10">
   <div class="container mx-auto px-6 max-w-5xl h-14 flex items-center justify-between">
-    <span class="text-slate-100 font-medium text-base tracking-tight">Jose Manuel Soldado</span>
+    <span class="text-slate-100 font-medium text-base tracking-tight">Jose Manuel</span>
     <nav class="flex gap-6">
       <a href="#about" class="text-sm text-slate-400 hover:text-white transition-colors">Inicio</a>
       <a href="#proyectos" class="text-sm text-slate-400 hover:text-white transition-colors">Proyectos</a>
