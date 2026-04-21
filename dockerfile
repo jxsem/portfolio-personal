@@ -33,6 +33,9 @@ COPY . /var/www
 # COPIAR LOS ASSETS COMPILADOS DESDE LA ETAPA 1
 COPY --from=build-assets /app/public/build /var/www/public/build
 
+# Limpiar posibles restos de dev y optimizar
+RUN php artisan config:cache && php artisan route:cache
+
 # Instalar dependencias de Laravel
 RUN composer install --no-dev --optimize-autoloader --ignore-platform-reqs
 
@@ -41,4 +44,4 @@ RUN chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
 
 EXPOSE 10000
 
-CMD php artisan serve --host=0.0.0.0 --port=10000
+CMD php artisan view:clear && php artisan config:clear && php artisan serve --host=0.0.0.0 --port=10000
