@@ -177,6 +177,10 @@
                 <input type="email" name="email" placeholder="Tu correo electrónico"
                     class="w-full bg-slate-950 border border-slate-800 focus:border-blue-600 outline-none text-slate-200 placeholder-slate-600 text-sm px-4 py-3 rounded-lg transition-colors">
             </div>
+            <div class="mb-4">
+                <input type="tel" name="telefono" placeholder="Tu número de teléfono (opcional)"
+                    class="w-full bg-slate-950 border border-slate-800 focus:border-blue-600 outline-none text-slate-200 placeholder-slate-600 text-sm px-4 py-3 rounded-lg transition-colors">
+            </div>
             <div class="mb-6">
                 <textarea name="mensaje" rows="4" placeholder="Tu mensaje..."
                     class="w-full bg-slate-950 border border-slate-800 focus:border-blue-600 outline-none text-slate-200 placeholder-slate-600 text-sm px-4 py-3 rounded-lg transition-colors resize-none"></textarea>
