@@ -3,7 +3,6 @@
 @section('content')
 
 {{-- SOBRE MÍ --}}
-{{-- SOBRE MÍ --}}
 <section id="about" class="py-24 bg-slate-950">
     <div class="container mx-auto px-6 max-w-5xl"> {{-- Aumentado un poco el max-w para que respire --}}
         <span class="inline-block bg-blue-900/50 text-blue-400 text-xs font-medium tracking-widest uppercase px-3 py-1 rounded-full mb-6">Sobre mí</span>
@@ -73,12 +72,16 @@
                 <p>
                     Saneé y fortalecí la operativa digital, neutralizando intentos de fraude mediante la
                     <code class="bg-slate-800 text-sky-300 px-1.5 py-0.5 rounded text-xs">Page Visibility API</code>
-                    para auditoría en tiempo real.
+                    para auditoría en tiempo real. <br></br>Desarrollé un sistema para ponentes, en el que cada ponente tenía un panel de control con su información de su charla, y un sistema de gestión de la mesa. <br></br>Asímismo, implementé una relación de gestión de usuarios con roles y permisos, y un sistema de gestión de eventos para la organización.
                 </p>
                 <p>
                     Desarrollé un ecosistema de intercambio de archivos en
                     <code class="bg-slate-800 text-sky-300 px-1.5 py-0.5 rounded text-xs">Laravel</code>
                     que eliminó vulnerabilidades físicas (USB), con APIs REST propias para procesamiento multimedia.
+                </p>
+
+                <p>
+                    Todo trabajo se realizó con un enfoque de <code class="bg-slate-800 text-sky-300 px-1.5 py-0.5 rounded text-xs">Clean Code</code> y por supuesto, con control de versiones en <code class="bg-slate-800 text-sky-300 px-1.5 py-0.5 rounded text-xs">Git</code> para garantizar calidad y trazabilidad.
                 </p>
             </div>
         </div>
@@ -91,6 +94,8 @@
         <div class="text-center mb-14">
             <span class="inline-block bg-blue-900/50 text-blue-400 text-xs font-medium tracking-widest uppercase px-3 py-1 rounded-full mb-4">Proyectos</span>
             <h2 class="text-4xl font-medium tracking-tight text-white">Proyectos Seleccionados</h2>
+            <p class="text-slate-500 mt-4 max-w-md mx-auto text-sm leading-relaxed">
+                Estos proyectos reflejan mi capacidad para resolver problemas complejos con soluciones técnicas elegantes y eficientes.
         </div>
 
         <div class="grid md:grid-cols-3 gap-5">
