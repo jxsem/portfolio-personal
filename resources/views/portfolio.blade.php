@@ -114,7 +114,7 @@
                 </p>
                 <div class="flex flex-col gap-2 mt-auto pt-4 border-t border-slate-800">
                     <a href="https://github.com/jxsem/the-splitter" target="_blank" class="text-[11px] font-semibold uppercase tracking-widest text-sky-400 hover:text-sky-300 transition-colors">GitHub Code →</a>
-                    <a href="https://the-splitter.onrender.com" class="text-[11px] font-semibold uppercase tracking-widest text-slate-600 hover:text-slate-300 transition-colors">Live Demo</a>
+                    <a href="https://the-splitter.onrender.com" target="_blank" class="text-[11px] font-semibold uppercase tracking-widest text-slate-600 hover:text-slate-300 transition-colors">Live Demo</a>
                 </div>
             </div>
 
@@ -132,7 +132,7 @@
                 </p>
                 <div class="flex flex-col gap-2 mt-auto pt-4 border-t border-slate-800">
                     <a href="https://github.com/jxsem/Automatic-Schedule-Generator" target="_blank" class="text-[11px] font-semibold uppercase tracking-widest text-sky-400 hover:text-sky-300 transition-colors">GitHub Code →</a>
-                    <a href="https://docs.google.com/spreadsheets/d/1bm_D9lAAzFQcppPQNViYDqoAkWmM-ozvwbovZmP_I-E/edit?usp=sharing" class="text-[11px] font-semibold uppercase tracking-widest text-slate-600 hover:text-slate-300 transition-colors">Live Demo</a>
+                    <a href="https://docs.google.com/spreadsheets/d/1bm_D9lAAzFQcppPQNViYDqoAkWmM-ozvwbovZmP_I-E/edit?usp=sharing" target="_blank" class="text-[11px] font-semibold uppercase tracking-widest text-slate-600 hover:text-slate-300 transition-colors">Live Demo</a>
                 </div>
             </div>
 
@@ -151,7 +151,7 @@
                 </p>
                 <div class="flex flex-col gap-2 mt-auto pt-4 border-t border-slate-800">
                     <a href="https://github.com/jxsem/Supermarket-web-application" target="_blank" class="text-[11px] font-semibold uppercase tracking-widest text-sky-400 hover:text-sky-300 transition-colors">GitHub Code →</a>
-                    <a href="#" class="text-[11px] font-semibold uppercase tracking-widest text-slate-600 hover:text-slate-300 transition-colors">Live Demo</a>
+                    <a href="#" target="_blank" class="text-[11px] font-semibold uppercase tracking-widest text-slate-600 hover:text-slate-300 transition-colors">Live Demo</a>
                 </div>
             </div>
         </div>
