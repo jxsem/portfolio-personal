@@ -178,7 +178,7 @@
                     class="w-full bg-slate-950 border border-slate-800 focus:border-blue-600 outline-none text-slate-200 placeholder-slate-600 text-sm px-4 py-3 rounded-lg transition-colors">
             </div>
             <div class="mb-4">
-                <input type="tel" name="telefono" placeholder="Tu número de teléfono (opcional)"
+                <input type="tel" name="telefono" placeholder="Tu número de teléfono (opcional)" pattern="[0-9]{9}"
                     class="w-full bg-slate-950 border border-slate-800 focus:border-blue-600 outline-none text-slate-200 placeholder-slate-600 text-sm px-4 py-3 rounded-lg transition-colors">
             </div>
             <div class="mb-6">

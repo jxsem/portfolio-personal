@@ -12,7 +12,7 @@ class ContactController extends Controller
     public function store(Request $request)
     {
          Log::info('El formulario ha llegado al controlador');
-        // Asegúrate de que estos nombres coincidan con el atributo 'name' de tu HTML
+        // Nombres coinciden con el atributo 'name' de tu HTML
         $validated = $request->validate([
             'nombre'  => 'required|string|max:255',
             'email'   => 'required|email|max:255',
