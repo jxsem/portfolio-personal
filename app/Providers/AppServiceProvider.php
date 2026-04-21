@@ -20,9 +20,14 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // Forzar HTTPS si estamos en producción (Render)
-        if (config('app.env') === 'production' || env('APP_ENV') === 'production') {
-            URL::forceScheme('https');
+            // Forzado absoluto si detectamos que estamos detrás de un proxy (como Render)
+        if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {
+            \Illuminate\Support\Facades\URL::forceScheme('https');
+        }
+        
+        // Por si acaso, forzar también si la URL de la app tiene https
+        if (str_contains(config('app.url'), 'https://')) {
+            \Illuminate\Support\Facades\URL::forceScheme('https');
         }
     }
 }
