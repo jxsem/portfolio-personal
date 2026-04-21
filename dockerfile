@@ -45,4 +45,4 @@ CMD php artisan config:clear && \
     php artisan view:clear && \
     php artisan config:cache && \
     php artisan route:cache && \
-    php artisan serve --host=0.0.0.0 --port=10000 --public-full-path=/var/www/public
+    php artisan serve --host=0.0.0.0 --port=10000 
