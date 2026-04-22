@@ -23,8 +23,11 @@ class ContactController extends Controller
 
         // 2. Preparas el texto plano para Telegram
     $texto = "🚀 *Nuevo mensaje de contacto*\n\n"
+            . "👤 *Nombre:* " . $request->nombre . "\n"
            . "📧 *Email:* " . $request->email . "\n"
-           . "💬 *Mensaje:* " . $request->mensaje;
+           . "💬 *Mensaje:* " . $request->mensaje . "\n"
+           . "📞 *Teléfono:* " . ($request->telefono ?? 'No proporcionado');
+           
 
     // 3. Envío directo vía HTTP (Sustituye al Mail::to)
     Http::post("https://api.telegram.org/bot" . config('services.telegram.token') . "/sendMessage", [
