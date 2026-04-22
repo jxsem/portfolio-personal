@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Mail\ContactReceived; // Corregido el namespace
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Http;
 
 class ContactController extends Controller
 {
@@ -20,19 +21,18 @@ class ContactController extends Controller
             'mensaje' => 'required|string',
         ]);
 
-        //@dd($validated); // Esto te permitirá ver los datos validados antes de enviar el correo
-        Log::info('Validación superada', $validated);
-        try {
-            Mail::to('josemanuel.soldado@outlook.es')->send(new ContactReceived($validated));
-            return back()->with('success', '¡Mensaje enviado correctamente!');
-            //return "Si veo esto, es problema del Mailer";
-        } catch (\Exception $e) {
-            // Esto te ayudará a ver si Mailtrap rechaza la conexión
-            dd($e->getMessage());
+        // 2. Preparas el texto plano para Telegram
+    $texto = "🚀 *Nuevo mensaje de contacto*\n\n"
+           . "📧 *Email:* " . $request->email . "\n"
+           . "💬 *Mensaje:* " . $request->mensaje;
 
-            //return back()->withErrors(['mail' => 'Error al enviar el correo.']);
-        }
+    // 3. Envío directo vía HTTP (Sustituye al Mail::to)
+    Http::post("https://api.telegram.org/bot" . config('services.telegram.token') . "/sendMessage", [
+        'chat_id' => config('services.telegram.chat_id'),
+        'text' => $texto,
+        'parse_mode' => 'Markdown',
+    ]);
 
-        return back()->with('success', 'Tu mensaje ha sido enviado correctamente. ¡Gracias por contactarme!');
+    return back()->with('success', '¡Gracias! Te responderé pronto.');
     }
 }
