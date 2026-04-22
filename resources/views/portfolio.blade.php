@@ -114,7 +114,7 @@
                 </p>
                 <div class="flex flex-col gap-2 mt-auto pt-4 border-t border-slate-800">
                     <a href="https://github.com/jxsem/the-splitter" target="_blank" class="text-[11px] font-semibold uppercase tracking-widest text-sky-400 hover:text-sky-300 transition-colors">GitHub Code →</a>
-                    <a href="https://the-splitter.onrender.com" target="_blank" class="text-[11px] font-semibold uppercase tracking-widest text-slate-600 hover:text-slate-300 transition-colors">Live Demo</a>
+                    <a href="https://the-splitter-production.up.railway.app/" target="_blank" class="text-[11px] font-semibold uppercase tracking-widest text-slate-600 hover:text-slate-300 transition-colors">Live Demo</a>
                 </div>
             </div>
 
@@ -139,19 +139,19 @@
             {{-- Tarjeta 3 --}}
             <div class="group flex flex-col bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-blue-500/60 transition-all duration-300 hover:-translate-y-1">
                 <div class="flex flex-wrap gap-1.5 mb-4">
-                    <span class="bg-blue-950 text-blue-400 text-[10px] font-medium px-2 py-0.5 rounded-full">Spring Boot</span>
-                    <span class="bg-blue-950 text-blue-400 text-[10px] font-medium px-2 py-0.5 rounded-full">Java</span>
+                    <span class="bg-blue-950 text-blue-400 text-[10px] font-medium px-2 py-0.5 rounded-full">Laravel</span>
+                    <span class="bg-blue-950 text-blue-400 text-[10px] font-medium px-2 py-0.5 rounded-full">PHP</span>
                     <span class="bg-blue-950 text-blue-400 text-[10px] font-medium px-2 py-0.5 rounded-full">JavaScript</span>
                 </div>
                 <h3 class="text-base font-medium text-white mb-3 group-hover:text-blue-400 transition-colors leading-snug">
                     E-commerce de Alta Concurrencia
                 </h3>
                 <p class="text-sm text-slate-500 leading-relaxed flex-1 mb-6">
-                    Arquitectura Spring Boot + JS con <em class="text-slate-400 not-italic">Pessimistic Locking</em> para evitar Race Conditions en stock bajo alta demanda.
+                    Arquitectura Laravel + JS con <em class="text-slate-400 not-italic">Pessimistic Locking</em> para evitar Race Conditions en stock bajo alta demanda.
                 </p>
                 <div class="flex flex-col gap-2 mt-auto pt-4 border-t border-slate-800">
-                    <a href="https://github.com/jxsem/Supermarket-web-application" target="_blank" class="text-[11px] font-semibold uppercase tracking-widest text-sky-400 hover:text-sky-300 transition-colors">GitHub Code →</a>
-                    <a href="https://supermarket-web-application.onrender.com" target="_blank" class="text-[11px] font-semibold uppercase tracking-widest text-slate-600 hover:text-slate-300 transition-colors">Live Demo</a>
+                    <a href="#" target="_blank" class="text-[11px] font-semibold uppercase tracking-widest text-sky-400 hover:text-sky-300 transition-colors">GitHub Code →</a>
+                    <a href="#" target="_blank" class="text-[11px] font-semibold uppercase tracking-widest text-slate-600 hover:text-slate-300 transition-colors">Live Demo</a>
                 </div>
             </div>
         </div>
