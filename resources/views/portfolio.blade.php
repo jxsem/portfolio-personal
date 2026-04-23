@@ -103,20 +103,23 @@
             <h3 class="text-xl font-medium text-white">Desarrollador Web Full Stack</h3>
             <span class="inline-block mt-2 mb-4 bg-slate-800 text-blue-400 text-xs px-3 py-1 rounded-full italic">Prácticas</span>
 
-            <div class="space-y-4 text-sm text-slate-400 leading-relaxed">
+            <div class="space-y-6 text-sm text-slate-400 leading-relaxed text-justify">
                 <p>
-                    Saneé y fortalecí la operativa digital, neutralizando intentos de fraude mediante la
-                    <code class="bg-slate-800 text-sky-300 px-1.5 py-0.5 rounded text-xs">Page Visibility API</code>
-                    para auditoría en tiempo real. <br></br>Desarrollé un sistema para ponentes, en el que cada ponente tenía un panel de control con su información de su charla, y un sistema de gestión de la mesa. <br></br>Asímismo, implementé una relación de gestión de usuarios con roles y permisos, y un sistema de gestión de eventos para la organización.
+                    Lideré la <strong>transformación digital</strong> de una plataforma interna crítica, cuyo funcionamiento dependía de procesos manuales vulnerables. Mi enfoque no fue simplemente actualizar el código, sino <strong>reconstruir los cimientos operativos</strong> para crear un ecosistema robusto y automatizado. Rediseñé la <strong>arquitectura de datos</strong> desde cero, implementando modelos relacionales escalables con <code class="bg-slate-800 text-sky-300 px-1.5 py-0.5 rounded text-xs">migraciones complejas (1:N, N:M)</code> y tablas pivot, logrando una <strong>integridad referencial absoluta</strong> en la gestión de eventos, ponentes y sistemas de permisos.
                 </p>
+                
                 <p>
-                    Desarrollé un ecosistema de intercambio de archivos en
-                    <code class="bg-slate-800 text-sky-300 px-1.5 py-0.5 rounded text-xs">Laravel</code>
-                    que eliminó vulnerabilidades físicas (USB), con APIs REST propias para procesamiento multimedia.
+                    Para mitigar un riesgo de seguridad crítico, eliminé la dependencia de dispositivos físicos (USB) mediante el desarrollo de un <strong>ecosistema de intercambio de archivos basado en tokens</strong>. Orquesté el ciclo completo bajo el patrón <strong>MVC</strong> en 
+                    <code class="bg-slate-800 text-sky-300 px-1.5 py-0.5 rounded text-xs">Laravel</code>, asegurando que el flujo de información sensible estuviera blindado mediante procesos de <strong>validación de identidad vía email</strong> y un control de acceso granular, eliminando puntos ciegos en la trazabilidad de los datos.
                 </p>
 
                 <p>
-                    Todo trabajo se realizó con un enfoque de <code class="bg-slate-800 text-sky-300 px-1.5 py-0.5 rounded text-xs">Clean Code</code> y por supuesto, con control de versiones en <code class="bg-slate-800 text-sky-300 px-1.5 py-0.5 rounded text-xs">Git</code> para garantizar calidad y trazabilidad.
+                    Uno de los mayores retos fue erradicar el fraude en las certificaciones de la plataforma. Diseñé una solución innovadora integrando la 
+                    <code class="bg-slate-800 text-sky-300 px-1.5 py-0.5 rounded text-xs">Page Visibility API</code> de JavaScript con el backend, permitiendo auditar el <strong>tiempo de formación real</strong> de los usuarios en tiempo real. Esta implementación devolvió la <strong>confianza y veracidad</strong> a los procesos de capacitación, garantizando que cada certificación emitida fuera legítima.
+                </p>
+
+                <p>
+                    Toda la infraestructura se desarrolló bajo estándares de <strong>arquitectura limpia</strong> y <code class="bg-slate-800 text-sky-300 px-1.5 py-0.5 rounded text-xs">Clean Code</code>, utilizando <code class="bg-slate-800 text-sky-300 px-1.5 py-0.5 rounded text-xs">Git</code> para un control de versiones riguroso, lo que asegura que el sistema no solo sea potente hoy, sino mantenible y escalable a largo plazo.
                 </p>
             </div>
         </div>
@@ -131,6 +134,7 @@
             <h2 class="text-4xl font-medium tracking-tight text-white">Proyectos Seleccionados</h2>
             <p class="text-slate-500 mt-4 max-w-md mx-auto text-sm leading-relaxed">
                 Estos proyectos reflejan mi capacidad para resolver problemas complejos con soluciones técnicas elegantes y eficientes.
+            </p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-5">
@@ -139,7 +143,6 @@
                 <div class="flex flex-wrap gap-1.5 mb-4">
                     <span class="bg-blue-950 text-blue-400 text-[10px] font-medium px-2 py-0.5 rounded-full">Laravel</span>
                     <span class="bg-blue-950 text-blue-400 text-[10px] font-medium px-2 py-0.5 rounded-full">PHP</span>
-                    <span class="bg-blue-950 text-blue-400 text-[10px] font-medium px-2 py-0.5 rounded-full">REST API</span>
                 </div>
                 <h3 class="text-base font-medium text-white mb-3 group-hover:text-blue-400 transition-colors leading-snug">
                     Sistema de Automatización Financiera
