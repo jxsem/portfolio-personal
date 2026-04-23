@@ -5,20 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   @vite(['resources/css/app.css', 'resources/js/app.js'])
   <title>Portfolio de Jose Manuel</title>
+  <link rel="icon" type="image/x-icon" href="{{ asset('desarrollador.png') }}">
 </head>
 <body class="bg-slate-950 text-slate-400">
 
 <header class="bg-slate-950 border-b border-slate-800/60 sticky top-0 z-10">
-  <div class="container mx-auto px-6 max-w-5xl h-14 flex items-center justify-between">
-    <span class="text-slate-100 font-medium text-base tracking-tight">Jose Manuel</span>
-    <nav class="flex gap-6">
+  <div class="container mx-auto px-6 max-w-5xl h-14 flex items-center justify-between gap-4">
+    
+    <span class="text-slate-100 font-medium text-base tracking-tight flex-shrink-0">
+        Jose Manuel
+    </span>
+
+    <nav class="flex gap-4 sm:gap-6 overflow-x-auto no-scrollbar whitespace-nowrap py-2">
       <a href="#about" class="text-sm text-slate-400 hover:text-white transition-colors">Inicio</a>
       <a href="#proyectos" class="text-sm text-slate-400 hover:text-white transition-colors">Proyectos</a>
       <a href="#contacto" class="text-sm text-slate-400 hover:text-white transition-colors">Contacto</a>
       <a href="{{ asset('docs/CV-Jose-Manuel-Soldado.pdf') }}" target="_blank" class="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors">
-            <span>Curriculum</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            <span>CV</span> <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>
         </a>
     </nav>
