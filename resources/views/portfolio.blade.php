@@ -42,8 +42,8 @@
         {{-- BLOQUE INFERIOR: SKILLS & STACK --}}
         <div class="mt-16 pt-12 border-t border-slate-800">
             
-            {{-- 1. SOFT SKILLS (Fila superior) --}}
-            <div class="grid md:grid-cols-2 gap-8 mb-12">
+            {{-- 1. SOFT SKILLS --}}
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
                 <div>
                     <h4 class="text-white font-medium mb-2 flex items-center gap-3">
                         <span class="w-6 h-0.5 bg-sky-400"></span> Adaptabilidad
@@ -54,31 +54,38 @@
                 </div>
                 <div>
                     <h4 class="text-white font-medium mb-2 flex items-center gap-3">
-                        <span class="w-6 h-0.5 bg-sky-400"></span> Resolución de Problemas
+                        <span class="w-6 h-0.5 bg-sky-400"></span> Resolución
                     </h4>
                     <p class="text-sm text-slate-500 leading-relaxed">
-                        Enfoque en eficiencia técnica e impacto de negocio, priorizando soluciones pragmáticas sobre el exceso de ingeniería.
+                        Enfoque en eficiencia técnica e impacto de negocio, priorizando soluciones sobre el exceso de ingeniería.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-medium mb-2 flex items-center gap-3">
+                        <span class="w-6 h-0.5 bg-sky-400"></span> Mentalidad Agile
+                    </h4>
+                    <p class="text-sm text-slate-500 leading-relaxed">
+                        Trabajo bajo metodologías que priorizan la entrega de valor continua y la comunicación transparente.
                     </p>
                 </div>
             </div>
 
-            {{-- 2. TECH STACK (Fila inferior completa) --}}
-            <div class="space-y-6">
-                <h4 class="text-white font-medium flex items-center gap-3">
-                    <span class="w-6 h-0.5 bg-blue-600"></span> Stack
+            {{-- 2. TECH STACK (Centrado y directo en HTML) --}}
+            <div class="flex flex-col items-center">
+                <h4 class="text-white font-medium flex items-center gap-3 mb-8">
+                    <span class="w-6 h-0.5 bg-sky-400"></span> Stack
                 </h4>
                 
-                {{-- Lista Horizontal con Efecto --}}
-                <div class="flex flex-wrap gap-3">
-                    <span class="cursor-default text-xs font-medium px-4 py-2 bg-slate-900/50 border border-slate-800 text-slate-500 rounded-lg transition-all duration-300 hover:scale-110 hover:border-blue-500/50 hover:text-blue-400 hover:bg-slate-900 shadow-sm">HTML</span>
-                    <span class="cursor-default text-xs font-medium px-4 py-2 bg-slate-900/50 border border-slate-800 text-slate-500 rounded-lg transition-all duration-300 hover:scale-110 hover:border-blue-500/50 hover:text-blue-400 hover:bg-slate-900 shadow-sm">CSS</span>
-                    <span class="cursor-default text-xs font-medium px-4 py-2 bg-slate-900/50 border border-slate-800 text-slate-500 rounded-lg transition-all duration-300 hover:scale-110 hover:border-blue-500/50 hover:text-blue-400 hover:bg-slate-900 shadow-sm">JavaScript</span>
-                    <span class="cursor-default text-xs font-medium px-4 py-2 bg-slate-900/50 border border-slate-800 text-slate-500 rounded-lg transition-all duration-300 hover:scale-110 hover:border-blue-500/50 hover:text-blue-400 hover:bg-slate-900 shadow-sm">PHP</span>
-                    <span class="cursor-default text-xs font-medium px-4 py-2 bg-slate-900/50 border border-slate-800 text-slate-500 rounded-lg transition-all duration-300 hover:scale-110 hover:border-blue-500/50 hover:text-blue-400 hover:bg-slate-900 shadow-sm">Laravel</span>
-                    <span class="cursor-default text-xs font-medium px-4 py-2 bg-slate-900/50 border border-slate-800 text-slate-500 rounded-lg transition-all duration-300 hover:scale-110 hover:border-blue-500/50 hover:text-blue-400 hover:bg-slate-900 shadow-sm">SQL</span>
-                    <span class="cursor-default text-xs font-medium px-4 py-2 bg-slate-900/50 border border-slate-800 text-slate-500 rounded-lg transition-all duration-300 hover:scale-110 hover:border-blue-500/50 hover:text-blue-400 hover:bg-slate-900 shadow-sm">Git</span>
-                    <span class="cursor-default text-xs font-medium px-4 py-2 bg-slate-900/50 border border-slate-800 text-slate-500 rounded-lg transition-all duration-300 hover:scale-110 hover:border-blue-500/50 hover:text-blue-400 hover:bg-slate-900 shadow-sm">Docker</span>
-                    <span class="cursor-default text-xs font-medium px-4 py-2 bg-slate-900/50 border border-slate-800 text-slate-500 rounded-lg transition-all duration-300 hover:scale-110 hover:border-blue-500/50 hover:text-blue-400 hover:bg-slate-900 shadow-sm">Linux</span>
+                <div class="flex flex-wrap justify-center gap-4 max-w-3xl">
+                    <span class="cursor-default text-sm font-semibold px-5 py-2.5 bg-slate-900/50 border border-slate-800 text-slate-400 rounded-xl transition-all duration-300 hover:scale-110 hover:border-blue-500/50 hover:text-blue-400 hover:bg-slate-900 shadow-lg tracking-wide">HTML</span>
+                    <span class="cursor-default text-sm font-semibold px-5 py-2.5 bg-slate-900/50 border border-slate-800 text-slate-400 rounded-xl transition-all duration-300 hover:scale-110 hover:border-blue-500/50 hover:text-blue-400 hover:bg-slate-900 shadow-lg tracking-wide">CSS</span>
+                    <span class="cursor-default text-sm font-semibold px-5 py-2.5 bg-slate-900/50 border border-slate-800 text-slate-400 rounded-xl transition-all duration-300 hover:scale-110 hover:border-blue-500/50 hover:text-blue-400 hover:bg-slate-900 shadow-lg tracking-wide">JavaScript</span>
+                    <span class="cursor-default text-sm font-semibold px-5 py-2.5 bg-slate-900/50 border border-slate-800 text-slate-400 rounded-xl transition-all duration-300 hover:scale-110 hover:border-blue-500/50 hover:text-blue-400 hover:bg-slate-900 shadow-lg tracking-wide">PHP</span>
+                    <span class="cursor-default text-sm font-semibold px-5 py-2.5 bg-slate-900/50 border border-slate-800 text-slate-400 rounded-xl transition-all duration-300 hover:scale-110 hover:border-blue-500/50 hover:text-blue-400 hover:bg-slate-900 shadow-lg tracking-wide">Laravel</span>
+                    <span class="cursor-default text-sm font-semibold px-5 py-2.5 bg-slate-900/50 border border-slate-800 text-slate-400 rounded-xl transition-all duration-300 hover:scale-110 hover:border-blue-500/50 hover:text-blue-400 hover:bg-slate-900 shadow-lg tracking-wide">SQL</span>
+                    <span class="cursor-default text-sm font-semibold px-5 py-2.5 bg-slate-900/50 border border-slate-800 text-slate-400 rounded-xl transition-all duration-300 hover:scale-110 hover:border-blue-500/50 hover:text-blue-400 hover:bg-slate-900 shadow-lg tracking-wide">Git</span>
+                    <span class="cursor-default text-sm font-semibold px-5 py-2.5 bg-slate-900/50 border border-slate-800 text-slate-400 rounded-xl transition-all duration-300 hover:scale-110 hover:border-blue-500/50 hover:text-blue-400 hover:bg-slate-900 shadow-lg tracking-wide">Docker</span>
+                    <span class="cursor-default text-sm font-semibold px-5 py-2.5 bg-slate-900/50 border border-slate-800 text-slate-400 rounded-xl transition-all duration-300 hover:scale-110 hover:border-blue-500/50 hover:text-blue-400 hover:bg-slate-900 shadow-lg tracking-wide">Linux</span>
                 </div>
             </div>
         </div>
