@@ -185,7 +185,7 @@
                     Clon de TradingView (en desarrollo)
                 </h3>
                 <p class="text-sm text-slate-500 leading-relaxed flex-1 mb-6">
-                    Uso de API REST de terceros, Laravel + JS para implementación de <em class="text-slate-400 not-italic">gráficas financieras</em> para monitorizar flujos de las divisas en intervalos de tiempo.
+                    Uso de API REST de terceros, Laravel + JS, implementación de <em class="text-slate-400 not-italic">gráficas financieras</em> para monitorizar flujos de las divisas en intervalos de tiempo.
                 </p>
                 <div class="flex flex-col gap-2 mt-auto pt-4 border-t border-slate-800">
                     <a href="#" target="_blank" class="text-[11px] font-semibold uppercase tracking-widest text-sky-400 hover:text-sky-300 transition-colors">GitHub Code →</a>
