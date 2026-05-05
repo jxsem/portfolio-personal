@@ -182,10 +182,10 @@
                     <span class="bg-blue-950 text-blue-400 text-[10px] font-medium px-2 py-0.5 rounded-full">JavaScript</span>
                 </div>
                 <h3 class="text-base font-medium text-white mb-3 group-hover:text-blue-400 transition-colors leading-snug">
-                    E-commerce de Alta Concurrencia (en desarrollo)
+                    Clon de TradingView (en desarrollo)
                 </h3>
                 <p class="text-sm text-slate-500 leading-relaxed flex-1 mb-6">
-                    Arquitectura Laravel + JS con <em class="text-slate-400 not-italic">Pessimistic Locking</em> para evitar Race Conditions en stock bajo alta demanda.
+                    Uso de API REST de terceros, Laravel + JS para implementación de <em class="text-slate-400 not-italic">gráficas financieras</em> para monitorizar flujos de las divisas en intervalos de tiempo.
                 </p>
                 <div class="flex flex-col gap-2 mt-auto pt-4 border-t border-slate-800">
                     <a href="#" target="_blank" class="text-[11px] font-semibold uppercase tracking-widest text-sky-400 hover:text-sky-300 transition-colors">GitHub Code →</a>
