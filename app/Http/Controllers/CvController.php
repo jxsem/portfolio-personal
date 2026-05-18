@@ -10,13 +10,13 @@ class CvController extends Controller
 {
     public function download(): StreamedResponse
     {
-        $path = 'cv.pdf'; // Ruta dentro de storage/app/private/
+        $path = 'private/cv.pdf'; // ← Añadido private/
 
         abort_unless(Storage::disk('local')->exists($path), 404);
 
         return Storage::disk('local')->download(
             $path,
-            'CV-Jose-Manuel-Soldado.pdf' // Nombre que verá el usuario al descargar
+            'CV-Jose-Manuel-Soldado.pdf'
         );
     }
 }
