@@ -10,7 +10,7 @@ class CvController extends Controller
 {
     public function download(): StreamedResponse
     {
-        $path = 'private/cv.pdf'; // ← Añadido private/
+        $path = 'cv.pdf';
 
         abort_unless(Storage::disk('local')->exists($path), 404);
 
