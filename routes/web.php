@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\CvController;
 
 //Parte principal del proyecto, donde se muestra la vista principal del proyecto
 Route::get('/', [ProjectController::class, 'index'])->name('portfolio.index');
@@ -23,6 +24,10 @@ Route::middleware(['auth', 'verified'])->prefix('admin')->group(function () {
 
 // Ruta para el formulario
 Route::post('/contacto', [ContactController::class, 'store'])->name('contact.store');
+
+// Ruta archivo CV
+Route::get('/cv/download', [CvController::class, 'download'])->name('cv.download');
+
 
 
 require __DIR__.'/auth.php';
